@@ -18,7 +18,7 @@ Naprogramujte RESTful API Server pomocí frameworku Spring Boot, který bude pos
 
 1. __Získání seznamu uživatelů:__ API endpoint pro získání seznamu všech uživatelů v systému. 
 2. __Získání jednoho uživatele:__ API endpoint pro získání jednoho konkrétního uživatele podle jeho id. Pokud není uživatel nalezen, tak navrátí HTTP status kód 404 Not Found.
-3. __Vytvoření nového uživatele:__ API endpoint pro vytvoření nového uživatele v systému. Endpoint bude validovat zadané data (email a telefoní číslo). Při úspěšném vytvoření navratí HTTP status kód 201. Pokud tyto data nebudou splňovat požadovaný formát, nebude uživatel v systému vytvořen a server navrátí HTTP status kód 400 Bad Request. 
+3. __Vytvoření nového uživatele:__ API endpoint pro vytvoření nového uživatele v systému. Endpoint bude validovat zadané data (email a telefoní číslo). Při úspěšném vytvoření navratí HTTP status kód 201 spolu s nově vytvořeným uživatelem ve formatu JSON (třida uživatele). Pokud tyto data nebudou splňovat požadovaný formát, nebude uživatel v systému vytvořen a server navrátí HTTP status kód 400 Bad Request. 
 4. __Aktualizace existujícího uživatele:__ API endpoint pro aktualizaci informací o existujícím uživateli v systému. Pokud takový uživatel není nalezen, tak navrátí HTTP status kód 404 Not Found. Pokud dojde k jiné chybě, navrátí HTTP status kód 400.
 5. __Smazání uživatele:__ API endpoint pro smazání existujícího uživatele ze systému. Pokud dojde k nějaké chybě, navrátí HTTP status kód 400.
 6. __Smazání všech uživatelů:__ API endpoint, který odstraní všechny uživatele z databáze. Pokud dojde k nějaké chybě, navrátí HTTP status kód 400.

@@ -14,7 +14,7 @@ build_application:
     - ./gradlew build
   artifacts:
     paths:
-      - app/build/libs/*.jar
+      - build/libs/*.jar
   allow_failure: false
 
 black_box_testing:
